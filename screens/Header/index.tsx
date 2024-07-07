@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <div className="w-full p-5 flex items-center justify-between">
+    <div className="w-full h-fit p-5 flex items-center justify-between bg-[#000000] fixed">
       <div className="w-fit h-fit rounded-full p-4 bg-[#242425] active:bg-[#3c3c3d] duration-200">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -9,7 +9,7 @@ export const Header = () => {
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
+          strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
         >

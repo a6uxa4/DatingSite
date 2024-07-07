@@ -1,6 +1,6 @@
+import { NextUIProvider } from "@/providers/NextUI";
 import "@/styles/globals.css";
 import { Metadata } from "next";
-import { Providers } from "./providers";
 
 export const metadata: Metadata = {
   title: "WEBSITE",
@@ -19,9 +19,7 @@ export default function RootLayout({
     <html suppressHydrationWarning lang="en">
       <head />
       <body>
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          {children}
-        </Providers>
+        <NextUIProvider>{children}</NextUIProvider>
       </body>
     </html>
   );
