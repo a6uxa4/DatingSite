@@ -59,10 +59,11 @@ export const MainPage = () => {
             {t("BUTTON")}
           </button>
         </div>
-        <div className="absolute z-20 right-14 w-[350px] h-[150px] top-[280px] flex flex-col items-center justify-between sm:hidden">
+        <div className="absolute z-20 right-14 w-[350px] h-[250px] top-[280px] flex flex-col items-center justify-between sm:hidden">
           <h1 className="text-[40px] font-fenix text-[#7c02c4e6]">
             BEAUTY CLINIC
           </h1>
+          <h1 className="text-center text-[#676767]">{t("MOBILE_DESC")}</h1>
           <div className="flex gap-5">
             <div className="w-[40px] h-[40px] bg-purple rounded-md flex items-center justify-center cursor-pointer">
               <svg
