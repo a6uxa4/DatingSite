@@ -18,6 +18,7 @@ module.exports = {
     },
     fontFamily: {
       barlow: ["Barlow Condensed", "sans-serif"],
+      fenix: ["Fenix", "serif"],
     },
     screens: {
       container: "1280px",

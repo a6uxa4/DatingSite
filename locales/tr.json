@@ -6,6 +6,14 @@
     "SERVICE": "Hizmetler",
     "OUR_WORKS": "İş örnekleri",
     "NEWS": "Haberler",
-    "SOCIAL": "Sosyal medyadayız."
+    "SOCIAL": "Sosyal medyadayız.",
+    "BUTTON": "Kaydol"
+  },
+  "MAIN": {
+    "DESC": "Plastik rekonstrüktif ve estetik cerrahi",
+    "YEAR": "YIL",
+    "PERIOD": "BİN",
+    "BUTTON": "Daha",
+    "DESC_SUB": "hastalar arasında mükemmel itibar"
   }
 }

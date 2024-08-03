@@ -34,7 +34,7 @@ export const Header = () => {
     <header className="w-full h-[67px] fixed bg-purple z-50 sm:h-[57px]">
       <div className="max-w-[1440px] h-full m-auto flex items-center justify-around">
         <button className="px-4 py-2 rounded-full border font-barlow text-white text-sm hover:scale-105 hover:bg-white hover:text-purple duration-300 sm:hidden">
-          Записаться
+          {t("BUTTON")}
         </button>
         <div className="w-fit h-[67px] flex items-center justify-center gap-10 sm:hidden">
           <Link
