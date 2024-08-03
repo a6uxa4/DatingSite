@@ -110,7 +110,7 @@ export const MainPage = () => {
           as={NextImage}
           src="/MainImage.png"
           alt="Main-Image"
-          className="max-h-[720px]"
+          className="max-h-[720px] sm:max-h-[500px]"
           width={470}
           height={700}
         />
