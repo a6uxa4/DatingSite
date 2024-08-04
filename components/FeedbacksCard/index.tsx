@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  CardFooter,
-  Avatar,
-} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Avatar } from "@nextui-org/react";
 import { IGetFeedback } from "@/common/feedbacks.interface";
 import { StarRating } from "../Rating";
 
@@ -16,7 +10,7 @@ interface IProps {
 
 export const FeedbackCard = ({ data }: IProps) => {
   return (
-    <Card className="max-w-[340px] sm:max-w-[300px]">
+    <Card className="max-w-[450px] sm:max-w-[300px]">
       <CardHeader className="justify-between">
         <div className="flex gap-5">
           <Avatar isBordered radius="full" size="md" src={data.avatar} />
@@ -28,7 +22,7 @@ export const FeedbackCard = ({ data }: IProps) => {
           </div>
         </div>
       </CardHeader>
-      <CardBody className="px-3 py-2 text-small text-default-400 max-h-[150px]">
+      <CardBody className="px-3 py-2 text-small text-default-400 sm:max-h-[150px] max-h-[250px]">
         <p>{data.feedback}</p>
       </CardBody>
     </Card>

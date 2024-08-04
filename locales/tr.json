@@ -16,5 +16,20 @@
     "BUTTON": "Daha",
     "DESC_SUB": "hastalar arasında mükemmel itibar",
     "MOBILE_DESC": "Güzellik yaratıcıları 20 yılı aşkın deneyime ve 10.000'den fazla başarılı ameliyata sahiptir. Her prosedürde yüksek kalite ve profesyonellik"
+  },
+  "ABOUT": {
+    "TITLE": "Bizim sınıfımız hakkında:"
+  },
+  "FOOTER": {
+    "CONTACT": "BİZİM ODALARIMIZ",
+    "NAVIGATION": "NAVİGASYON",
+    "MAIN": "Anasayfa",
+    "ABOUT": "Hakkımızda",
+    "PERSON": "Doktorlar",
+    "SERVICE": "Hizmetler",
+    "OUR_WORKS": "İş örnekleri",
+    "NEWS": "Haberler",
+    "SOCIAL": "Sosyal medyadayız.",
+    "SCHEDULE": "İŞ ZAMANI"
   }
 }

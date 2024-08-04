@@ -1,6 +1,9 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 export const Footer = () => {
+  const t = useTranslations("FOOTER");
+
   return (
     <footer className="bg-purple">
       <div className="w-full max-w-[1440px] mx-auto p-4 sm:p-0 sm:pb-4">
@@ -17,30 +20,30 @@ export const Footer = () => {
             <div className="w-full flex items-start justify-around">
               <div className="flex flex-col gap-1 items-center">
                 <span className="font-barlow text-[16px] text-white sm:text-[14px]">
-                  НАВИГАЦИЯ
+                  {t("NAVIGATION")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
-                  Главный
+                  {t("MAIN")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
-                  О нас
+                  {t("ABOUT")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
-                  Врачи
+                  {t("PERSON")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
-                  Услуги
+                  {t("SERVICE")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
-                  Наши работы
+                  {t("OUR_WORKS")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
-                  Новости
+                  {t("NEWS")}
                 </span>
               </div>
               <div className="flex flex-col gap-1 items-center">
                 <span className="font-barlow text-[16px] text-white sm:text-[14px]">
-                  НАШИ НОМЕРА
+                  {t("CONTACT")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
                   +996 502 950 200
@@ -56,7 +59,7 @@ export const Footer = () => {
             <div className="w-full flex items-start justify-around">
               <div className="flex flex-col gap-1 items-center">
                 <span className="font-barlow text-[16px] text-white sm:text-[14px]">
-                  ВРЕМЯ РАБОТЫ
+                  {t("SCHEDULE")}
                 </span>
                 <span className="font-barlow text-[14px] text-[#cccccc] cursor-pointer hover:text-white duration-200 transition-all sm:text-[12px]">
                   пн - пт: 09.00 - 19.00
@@ -70,7 +73,7 @@ export const Footer = () => {
               </div>
               <div className="flex flex-col gap-2 items-center">
                 <span className="font-barlow text-[16px] text-white sm:text-[14px]">
-                  МЫ В СОЦСЕТЯХ
+                  {t("SOCIAL")}
                 </span>
                 <div className="flex items-center justify-center gap-4">
                   <div className="cursor-pointer">

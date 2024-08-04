@@ -9,9 +9,9 @@ export const FeedbacksPage = () => {
   const { data = [] } = useGetFeedbackQuery();
 
   return (
-    <div className="w-full max-w-[1440px]">
+    <div className="w-full max-w-[1440px] mb-[100px]">
       <Heading title="Отзывы" />
-      <div className="flex flex-wrap items-center justify-center gap-5 sm:hidden">
+      <div className="flex flex-wrap items-center justify-center gap-5 sm:hidden mt-14">
         {data.map((item) => (
           <FeedbackCard key={item.feedbackId} data={item} />
         ))}
@@ -19,7 +19,7 @@ export const FeedbacksPage = () => {
       <div className="hidden sm:block">
         <Swiper slidesPerView={1} className="h-[250px]">
           {data.map((item) => (
-            <SwiperSlide>
+            <SwiperSlide key={item.feedbackId}>
               <div className="w-full h-full flex items-center justify-center">
                 <FeedbackCard key={item.feedbackId} data={item} />
               </div>
