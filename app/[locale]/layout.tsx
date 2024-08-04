@@ -4,6 +4,7 @@ import { NextIntlClientProvider, useMessages } from "next-intl";
 import { Metadata } from "next";
 import { Layout } from "@/layout";
 import Head from "next/head";
+import { ReduxProvider } from "@/providers/ReduxProvider";
 
 export const metadata: Metadata = {
   title: "WEBSITE",
@@ -36,11 +37,13 @@ export default function RootLayout({
         />
       </Head>
       <body>
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <NextUIProvider>
-            <Layout>{children}</Layout>
-          </NextUIProvider>
-        </NextIntlClientProvider>
+        <ReduxProvider>
+          <NextIntlClientProvider locale={locale} messages={messages}>
+            <NextUIProvider>
+              <Layout>{children}</Layout>
+            </NextUIProvider>
+          </NextIntlClientProvider>
+        </ReduxProvider>
       </body>
     </html>
   );
