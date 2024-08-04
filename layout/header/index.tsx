@@ -58,7 +58,7 @@ export const Header = () => {
             {t("PERSON")}
             <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-[1px] bg-white mt-[1px]"></span>
           </Link>
-          <Image src="/Logo.png" alt="HELLO" width={170} height={0} priority />
+          <Image src="/Logo.png" alt="Logo" width={170} height={0} priority />
           <Link
             href={"/"}
             className="group text-white font-normal font-barlow text-base transition duration-200 cursor-pointer"
@@ -118,7 +118,7 @@ export const Header = () => {
           ))}
         </Select>
         <div className="hidden sm:flex w-full h-full items-center justify-between px-2">
-          <Image src="/Logo.png" alt="HELLO" width={150} height={0} priority />
+          <Image src="/Logo.png" alt="Logo" width={150} height={0} priority />
           <motion.div
             onClick={() => setIsOpen(!isOpen)}
             className="w-5 h-5 flex flex-col justify-around relative z-40 mr-2"
