@@ -28,7 +28,7 @@ export const NewsCard = ({ data }: IProps) => {
         className="z-0 w-full h-full object-cover"
         src={data.image}
       />
-      <CardFooter className="group-hover:h-full group-hover:bg-black/70 transition-all duration-500 ease-in-out absolute bottom-0 z-10 w-full bg-black/40 border-t-1 border-white">
+      <CardFooter className="group-hover:h-full group-hover:bg-black/70 transition-all duration-500 ease-in-out absolute bottom-0 z-10 w-full bg-black/40 border-t-1 border-white group-hover:border-none">
         <p className="text-tiny text-white/60 truncate group-hover:whitespace-normal group-hover:max-h-full transition-all duration-500 ease-in-out">
           {data[getTitleKey(pathName, data, "describtion")]}
         </p>

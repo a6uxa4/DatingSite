@@ -8,7 +8,7 @@ export const NewsPage = () => {
   const { data = [] } = useGetNewsQuery();
 
   return (
-    <div className="w-full max-w-[1440px]">
+    <div className="w-full max-w-[1440px] my-10">
       <Heading title="Новости" />
       <div className="flex flex-wrap items-center justify-center gap-5">
         {data.map((item) => (
