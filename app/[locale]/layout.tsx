@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { Layout } from "@/layout";
 import Head from "next/head";
 import { ReduxProvider } from "@/providers/ReduxProvider";
+import "swiper/css";
 
 export const metadata: Metadata = {
   title: "WEBSITE",
