@@ -9,7 +9,7 @@ export const FeedbacksPage = () => {
   const { data = [] } = useGetFeedbackQuery();
 
   return (
-    <div className="w-full max-w-[1440px] mb-[100px]">
+    <div className="w-full max-w-[1440px] mb-[100px] sm:mb-[50px]">
       <Heading title="Отзывы" />
       <div className="flex flex-wrap items-center justify-center gap-5 sm:hidden mt-14">
         {data.map((item) => (
